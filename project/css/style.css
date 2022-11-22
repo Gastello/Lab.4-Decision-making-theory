@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+/*-------------------------------FONTS-----------------------------------*/
+/*-------------------------DEFAULT FONT-----------------------------*/
+/*-------------------------------VARIABLES-------------------------------*/
+/*--------------------------CONTENT WRAPPERS------------------------------*/
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #fff2e2; }
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.page {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  padding: 40px 0; }
+
+/*------------------------------HEADER------------------------------------*/
+/*
+
+ <header class="header">
+         <div class="container">
+            <div class="header__body">
+               <a href="" class="header__logo"></a>
+               <div class="header__burger">
+                  <span></span>
+               </div>
+               <nav class="header__menu">
+                  <ul class="header__list">
+                     <li><a href="" class="header__link">TEXT</a></li>
+                     <li><a href="" class="header__link">TEXT</a></li>
+                     <li><a href="" class="header__link">TEXT</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+ </header>
+
+*/
+/*
+
+ .header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 50;
+   width: 100%;
+   &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      content: "";
+   }
+   &__body {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+   }
+   &__logo {
+      z-index: 3;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+   }
+   &__burger {
+      display: none;
+   }
+   &__burger.active::before {
+      top: 9px;
+      transform: rotate(45deg);
+   }
+   &__burger.active::after {
+      bottom: 9px;
+      transform: rotate(-45deg);
+   }
+   &__burger.active span {
+      transform: scale(0);
+   }
+   &__list {
+      display: flex;
+      position: relative;
+      z-index: 3;
+      li {
+         margin: 0 0 0 20px;
+      }
+   }
+   &__link {
+      background: #000000;
+   }
+}
+
+@media (max-width: $md3) {
+   body.lock {
+      overflow: hidden;
+   }
+   .header__list {
+      display: block;
+      li {
+         
+      }
+   }
+   .header__body {
+      height: 50px;
+   }
+   .header__logo {
+   }
+   .header__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      transition-duration: 0.3s;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+   }
+   .header__menu.active {
+      top: 0;
+      transition-duration: 0.3s;
+   }
+   .header__burger {
+      display: block;
+      position: relative;
+      z-index: 3;
+      width: 30px;
+      height: 20px;
+      &::after,
+      &::before {
+         position: absolute;
+         left: 0;
+         transition-duration: 0.3s;
+         width: 100%;
+         height: 2px;
+         content: "";
+         background: #000000;
+      }
+      &::before {
+         top: 0;
+      }
+      &::after {
+         bottom: 0;
+      }
+      span {
+         position: absolute;
+         top: 9px;
+         left: 0;
+         transition-duration: 0.3s;
+         width: 100%;
+         height: 2px;
+         background: #000000;
+      }
+   }
+}
+*/
+/*-------------------------------BEM-BLOCKS-------------------------------*/
+/*--------------------------------------------------------------------*/
+.table {
+  margin: 0 auto 10px auto;
+  background-color: bisque;
+  border: 2px black solid; }
+  .table__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .table__tr {
+    font-weight: 700; }
+  .table__th {
+    border: 2px black solid;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center; }
+  .table__td {
+    border: 2px black solid;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center; }
+    .table__td_bold {
+      font-weight: 700; }
+
+.name {
+  font-size: 28px;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffd5a2; }
+
+.solution {
+  font-size: 22px;
+  margin-bottom: 10px; }
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/

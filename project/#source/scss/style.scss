@@ -1,0 +1,107 @@
+@import "null_style.scss";
+/*-------------------------------FONTS-----------------------------------*/
+//&display=swap&subset=cyrillic-ext
+@import "fonts.scss";
+
+
+/*-------------------------DEFAULT FONT-----------------------------*/
+$fontFamily: "";
+/*-------------------------------VARIABLES-------------------------------*/
+$paddingContainer: 15;
+$maxWidthContainer: 960+$paddingContainer * 2;
+
+$md1: $maxWidthContainer+$paddingContainer;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+
+/*--------------------------CONTENT WRAPPERS------------------------------*/
+body {
+   font-family: 'Trebuchet MS', sans-serif;
+   background-color: rgb(255, 242, 226);
+}
+
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+.container {
+   max-width: $maxWidthContainer + px;
+   margin: 0 auto;
+   padding: 0 $paddingContainer + px;
+}
+
+.page {
+   flex: 1 1 100%;
+   padding: 40px 0;
+}
+
+/*------------------------------HEADER------------------------------------*/
+@import "header.scss";
+/*-------------------------------BEM-BLOCKS-------------------------------*/
+
+/*--------------------------------------------------------------------*/
+.table {
+   margin: 0 auto 10px auto;
+   background-color: bisque;
+   border: 2px black solid;
+
+   &__wrapper {
+      display: flex;
+   }
+
+   // .table__tr
+
+   &__tr {
+      font-weight: 700;
+   }
+
+   // .table__th
+
+   &__th {
+      border: 2px black solid;
+      padding: 5px;
+      font-size: 18px;
+      text-align: center;
+   }
+
+   // .table__td
+
+   &__td {
+      border: 2px black solid;
+      padding: 5px;
+      font-size: 18px;
+      text-align: center;
+      // .table__td_bold
+
+      &_bold {
+         font-weight: 700;
+      }
+   }
+}
+
+.name {
+   font-size: 28px;
+   margin: 10px 0;
+   padding: 10px;
+   text-align: center;
+   background-color: rgb(255, 213, 162);
+}
+
+.solution {
+   font-size: 22px;
+   margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
